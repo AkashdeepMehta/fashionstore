@@ -141,7 +141,7 @@ p{
 }
 
 .col-4 p{
-    font-size: 14px;
+    font-size: 9px;
 }
 .rating .fa{
     color:#ff523b;
@@ -384,30 +384,6 @@ th:last-child{
     text-align: right;
 }
 
-@media only screen and (max-width: 800px){
-    nav ul{
-        position: absolute;
-        top: 70px;
-        left: 0;    
-        background: #333;
-        width: 100%;  
-        overflow: hidden;
-    }
-    nav ul li{
-        display: block;
-        margin-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        transition: max-height 0.5s;
-    }
-    nav ul li a{
-        color:white
-    }
-    .menu-icon{
-        display:block;
-        cursor: pointer;
-    }
-}
 
 /* Account page*/
 
@@ -487,13 +463,68 @@ form a{
 }
 
 /* media query */
-@media only screen and (max-width: 600px){
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;    
+        background: #333;
+        width: 100%;  
+        overflow: hidden;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        transition: max-height 0.5s;
+    }
+    nav ul li a{
+        color:white
+    }
+    .menu-icon{
+        display:block;
+        cursor: pointer;
+    }
+    .col-4{
+        min-width: 242px;
+        font-size: 17px;
+    }
+    .col-2 h1, p {
+        font-size: 21px;
+        line-height: 32px;
+        margin: 0px 20px;
+        text-align: left;
+    }
+    .col-2{
+        min-width: 328px;
+    }
+    .col-4 p{
+        font-size: 8px;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    .col-3 p{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .col-3 {
+        width: 100%;
+        flex-basis: 33.3%;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 400px){
     .row{
         text-align: center;
 
     }
-    .col-2, .col-3, .col-4{
-        flex-basis: 100%;
+    .col-2, .col-3,{
+        flex-basis: 50%;
     }
     .single-product .row{
         text-align: left;
@@ -505,7 +536,31 @@ form a{
     .cart-info{
         font-size: 8px;
     }
-
+    .col-2 h1, p {
+        font-size: 21px;
+        line-height: 32px;
+        margin: 0px 20px;
+        text-align: left;
     }
-
+    .col-4{
+        min-width: 197px;
+        font-size: 19px;
+    }
+    .col-4 p{
+        font-size: 8px;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    .col-3 p{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .col-3 {
+        width: 100%;
+        flex-basis: 50%;
+        flex-wrap: wrap;
+    }
 }
+
