@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV Fashion store | Ecommerce Website</title>
+    <link rel="stylesheet" href="av.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="Home.html">
+                <img src="Untitled design.png" alt="" width="50px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li><a href="about.html">About</a></li>
+
+                </ul>
+            </nav> <a href="cart.html">
+            <img src="shopping.png" alt="" width="20px" height="20px"></a>
+            <img src="menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+<!-- cart items details -->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <a href="product details.html">
+                    <img src="t81.webp" alt="">
+                    <div>
+                        <p>
+                            Men Navy Printed Round Neck T-shirt
+                        </p>
+                        <small>Price: Rs269.00 </small>
+                        <br> </a>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <!-- <td>Product Name</td> -->
+            <td>
+                <input type="number" value="1">
+            </td>
+            <td>Rs.269</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info"><a href="product details.html">
+                    <img src="t71.jpg" alt="">
+                    <div>
+                        <p>Men Navy Printed Round Neck stylish T-shirt
+                        </p>
+                        <small>Price: Rs389.00 </small>
+                        <br> </a>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <!-- <td>Product Name</td> -->
+            <td>
+                <input type="number" value="1">
+            </td>
+            <td>Rs.389</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info"><a href="product details.html">
+                    <img src="t61.webp" alt="">
+                    <div>
+                        <p>Men Navy Solid Round Neck T-shirt
+                        </p>
+                        <small>Price: Rs399.00 </small>
+                        <br> </a>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <!-- <td>Product Name</td> -->
+            <td>
+                <input type="number" value="1">
+            </td>
+            <td>Rs.399</td>
+        </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>Rs.1057</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>Rs.38</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>Rs.1095
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p> Download App for Android or IOS Mobile Phone</p>
+                    <img src="Android.png" alt="">
+                    <img src="ios.png" alt="">
+                </div>
+                <div class="footer-col-2">
+                    <img src="Untitled design.png" alt="">
+                    <p>Here,You can purchase amazing T-shirt,Jeans and Shoes</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful LInks</h3>
+                    <ul>
+                        <li>About us</li>
+                        <li>careers</li>
+                        <li>Fress Release</li>
+                        <li>T&C</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Contact With Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instragram</li>
+                        <li>Twitter</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 www.avfashion.com All Right Reserved</p>
+        </div>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight = "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+ 
+</body>
+
+</html>
