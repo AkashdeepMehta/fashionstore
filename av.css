@@ -518,13 +518,16 @@ form a{
     }
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 600px){
     .row{
         text-align: center;
+       
 
     }
     .col-2, .col-3,{
-        flex-basis: 50%;
+        flex-basis: 33%;
+        min-width: 288px;
+        padding: 21px;
     }
     .single-product .row{
         text-align: left;
@@ -543,11 +546,10 @@ form a{
         text-align: left;
     }
     .col-4{
-        min-width: 197px;
-        font-size: 19px;
-    }
+        min-width: 149px;
+        font-size: 14px;
     .col-4 p{
-        font-size: 8px;
+        font-size: 10px;
         margin: 0px;
         padding: 0px;
         text-align: center;
@@ -559,7 +561,7 @@ form a{
     }
     .col-3 {
         width: 100%;
-        flex-basis: 50%;
+        flex-basis: 33.3%;
         flex-wrap: wrap;
     }
 }
