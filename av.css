@@ -80,7 +80,8 @@ p{
     background: radial-gradient(#fff,#ffd6d6);
 }
 .header .row{
-    margin-top:70px;
+    padding: 10PX;
+    margin-top: 70px;
 }
 .categories{
     margin: 0;
@@ -525,10 +526,11 @@ form a{
 
     }
     .row p{
-        font-size: 7px;
+        font-size: 8px;
         margin: 0px;
-        padding: 0px;
-        text-align: center;
+        padding: 20px;
+        line-height: 17px;
+        text-align: left;
     }
     .col-2, .col-3,{
         flex-basis: 33%;
@@ -552,7 +554,7 @@ form a{
         text-align: left;
     }
     .col-4{
-        min-width: 120px;
+        min-width: 150px;
         font-size: 14px;
     }
     .col-3 p{
@@ -565,6 +567,18 @@ form a{
         flex-basis: 33.3%;
         flex-wrap: wrap;
     }
-    .small-container1 title
+    .hii h1, p{
+        margin: 0;
+        text-align: left;
+    }
+    .single-product .col-2 {
+        padding: 10px;
+    }
+    .footer h3{
+        font-size: 10px;
+    }
+    .copyright {
+        font-size: 8px;
+    }
 }
 
