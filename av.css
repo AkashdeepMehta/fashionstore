@@ -524,6 +524,12 @@ form a{
        
 
     }
+    .row p{
+        font-size: 7px;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
     .col-2, .col-3,{
         flex-basis: 33%;
         min-width: 288px;
@@ -546,13 +552,8 @@ form a{
         text-align: left;
     }
     .col-4{
-        min-width: 149px;
+        min-width: 120px;
         font-size: 14px;
-    .col-4 p{
-        font-size: 10px;
-        margin: 0px;
-        padding: 0px;
-        text-align: center;
     }
     .col-3 p{
         margin: 0;
@@ -564,5 +565,6 @@ form a{
         flex-basis: 33.3%;
         flex-wrap: wrap;
     }
+    .small-container1 title
 }
 
