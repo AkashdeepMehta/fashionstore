@@ -46,6 +46,19 @@ p{
     justify-content: space-around;
     
 }
+.row .col-2 p{
+    font-size: 17px;
+    margin: 2px;
+    padding: 5px;
+    line-height: 32px;
+    text-align: left;
+}
+.col-2 h1, p {
+    font-size: 21px;
+    line-height: 29px;
+    margin: 0px 6px;
+    text-align: left;
+}
 .col-2{
     flex-basis: 50%;
     min-width: 300px;
@@ -67,9 +80,10 @@ p{
     padding: 8px 30px;
     margin-right: 30px 0;
     border-radius: 30px;
-    margin-top: 20px;
     transition:background 0.5s;
-    margin-bottom: 20px;
+    margin: 20px;
+
+
 }   
 .btn:hover{
     background: #563434 ;
@@ -110,6 +124,9 @@ p{
     box-shadow: 0 0 20px rgba(0,0,0,.3);
     
 }
+.col-4 p{
+    font-size: 12px;
+}
 .col-4 img{
     width:100%;
 
@@ -141,9 +158,7 @@ p{
     background: #ffd6d6;
 }
 
-.col-4 p{
-    font-size: 9px;
-}
+
 .rating .fa{
     color:#ff523b;
 }
@@ -180,19 +195,26 @@ span{
     color: #777;
 
 }
+.col-3 i{
+    font-size: 15px;
+    color: #ff523b;
+}
 .testimonial .col-3 h3{
     font-weight: 600;
     color: #555;
     font-size: 16px;
 }
-.footer{
+.footer {
     background: black;
     color: #8a8a8a;
-    font-size: 14px;
-    padding: 60px 0 20px;
+    font-size: 12px;
+    padding: 20px 43px;
+    margin: 0px;
+
 }
 .footer p{
     color: #8a8a8a;
+    font-size: 8px;
 
 }
 .footer h3{
@@ -217,14 +239,22 @@ span{
 
 }
 .footer-col-2 img{
-    width: 100px;
-    margin-bottom: 20px;
+    width: 75px;
 
 }
-.footer-col-3, .footer-col-4{
+.footer-col-3, .footer-col-2, .footer-col-1, .footer-col-4{
     flex-basis: 12%;
     text-align:center;
 
+}
+.footer-col-4 p{
+    font-size: 3px;
+}
+.footer-col-2 p{
+    font-size: 12px;
+}
+.footer-col-1 p{
+    font-size: 11px;
 }
 ul{
     list-style-type: none;
@@ -501,11 +531,11 @@ form a{
     .col-2{
         min-width: 328px;
     }
-    .col-4 p{
-        font-size: 8px;
+    .col-4 p {
+        font-size: 12px;
         margin: 0px;
         padding: 0px;
-        text-align: center;
+        text-align: left;
     }
     .col-3 p{
         margin: 0;
@@ -517,7 +547,18 @@ form a{
         flex-basis: 33.3%;
         flex-wrap: wrap;
     }
-}
+    .col-3 p {
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+        text-align: center;
+        line-height: 25px;
+    }
+    .col-3 i{
+        font-size: 15px;
+        color: #ff523b;
+    }
+} 
 
 @media only screen and (max-width: 600px){
     .row{
@@ -525,11 +566,11 @@ form a{
        
 
     }
-    .row p{
-        font-size: 8px;
+    .row .col-2 p{
+        font-size: 10px;
         margin: 0px;
-        padding: 20px;
-        line-height: 17px;
+        padding: 5px;
+        line-height: 16px;
         text-align: left;
     }
     .col-2, .col-3,{
@@ -549,17 +590,19 @@ form a{
     }
     .col-2 h1, p {
         font-size: 21px;
-        line-height: 32px;
-        margin: 0px 20px;
+        line-height: 29px;
+        margin: 0px 6px;
         text-align: left;
     }
     .col-4{
         min-width: 150px;
         font-size: 14px;
     }
-    .col-3 p{
-        
-        text-align: center;
+    .col-4 p {
+        padding: 0;
+        font-size: 10px;
+        line-height: 16px;
+        text-align: left;
     }
     .col-3 {
         width: 100%;
@@ -576,8 +619,54 @@ form a{
     .footer h3{
         font-size: 10px;
     }
+
+     .container {
+        max-width: 1300px;
+        margin: auto;
+        padding-right: 25px;
+        padding-left: 25px;
+    
+    }
+     * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    div {
+        display: block;
+    }
+    .footer {
+        background: black;
+        color: rgb(138, 138, 138);
+        font-size: 12px;
+        padding: 22px;
+        margin: 0px;
+    }
     .copyright {
         font-size: 8px;
+    }
+    .footer-col-4 p{
+        font-size: 12px;
+    }
+    .footer-col-2 p{
+        font-size: 9px;
+        text-align: center;
+    }
+    .footer-col-1 p{
+        font-size: 9px;
+        text-align: center;
+    }
+    .col-3 p {
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+        text-align: center;
+        line-height: 14px;
+    }
+    .col-3 i{
+        font-size: 10px;
+        color: #ff523b;
     }
 }
 
