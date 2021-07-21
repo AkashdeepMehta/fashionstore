@@ -59,11 +59,11 @@
                     <h3>Rs.269 <del> Rs.599 </del><span>(55% OFF)</span></h3>
                     <h4>SELECT SIZE</h4>
 
-                    <div class="btn1">
-                        <a href="" class="btn" id="change" onclick="changeColor()">S</a>
-                        <a href="" class="btn" id="change">M</a>
-                        <a href="" class="btn" id="change">L</a>
-                        <a href="" class="btn" id="change">XL</a>
+                    <div style="display: flex;" class="btn1">
+                        <a href="" class="btn" id="change1" onclick="changeColor()">S</a>
+                        <a href="" class="btn" id="change2">M</a>
+                        <a href="" class="btn" id="change3">L</a>
+                        <a href="" class="btn" id="change4">XL</a>
                     </div>
                     <div class="choose1">
                         <a href="cart.html" class="btn" style="color: blueviolet;">Add to Cart</a>
@@ -170,11 +170,14 @@
                 </div>
                 <div class="footer-col-4">
                     <h3>Contact With Us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Instragram</li>
-                        <li>Twitter</li>
-                        <li>YouTube</li>
+                    <ul><a href="https://www.facebook.com/akashdeep.kumar.169">
+                        <li style="color: blue;">Facebook</li></a>
+                        <a href="https://www.instagram.com/akashdeep_mehta/">
+                        <li style="color: tomato;">Instragram</li></a>
+                        <a href="https://twitter.com/mehta_akashdeep">
+                        <li style="color: blueviolet;">Twitter</li></a>
+                        <a href="https://www.youtube.com/channel/UCtS2K4E0XxuuSncRsWax-3g">
+                        <li style="color: red;">YouTube</li></a>
                     </ul>
                 </div>
             </div>
@@ -211,15 +214,11 @@
             ProductImg.src = SmallImg[3].src
         }
     </script>
-    <script>
+    <script> 
 
-        var changeColor = document.getElementById('change') 
-    
-        function changeColor(){
-            document.body.style.color = "blue";
-            return false;
-        }   
-    
+        function changeColor() {
+            document.getElementById("change1").style.color = "blue";
+        }  
     </script>
     
 </body>

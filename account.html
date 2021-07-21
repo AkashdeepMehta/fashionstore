@@ -50,8 +50,8 @@
                         <form id="LoginForm">
                             <input type="text" class="xyz" placeholder=" Username">
                             <input type="password" class="xyz" placeholder=" Password">
-                            <a href="Home.html">
-                            <button type="submit" class="btn">Login</button></a>
+                            <a href="index.html">
+                            <p type="submit" class="btn" style="text-align: center;">Login</p></a>
                             <a href="" style="text-decoration: underline; color: blueviolet;"> Forget Password</a>
                         </form>
 
@@ -61,8 +61,8 @@
                             <input type="email" class="xyz" placeholder=" Email">
                             <input type="password" class="xyz" placeholder=" Password">
                             <input type="password" class="xyz" placeholder=" Confirm Password">
-                            
-                            <button type="submit" class="btn">Register</button>  
+                            <a href="index.html">
+                            <p type="submit" class="btn" style="text-align: center;">Register</p></a>  
                         </form>
                     </div>
                 </div>
@@ -79,8 +79,7 @@
                 <div class="footer-col-1">
                     <h3>Download Our App</h3>
                     <p> Download App for Android or IOS Mobile Phone</p>
-                    <img src="Android.png" alt="">
-                    <img src="ios.png" alt="">
+                    <div onclick="myFunction()"><img src="Android.png" alt=""><img src="ios.png" alt=""></div>
                 </div>
                 <div class="footer-col-2">
                     <img src="Untitled design.png" alt="">
@@ -97,11 +96,14 @@
                 </div>
                 <div class="footer-col-4">
                     <h3>Contact With Us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Instragram</li>
-                        <li>Twitter</li>
-                        <li>YouTube</li>
+                    <ul><a href="https://www.facebook.com/akashdeep.kumar.169">
+                        <li style="color: blue;">Facebook</li></a>
+                        <a href="https://www.instagram.com/akashdeep_mehta/">
+                        <li style="color: tomato;">Instragram</li></a>
+                        <a href="https://twitter.com/mehta_akashdeep">
+                        <li style="color: blueviolet;">Twitter</li></a>
+                        <a href="https://www.youtube.com/channel/UCtS2K4E0XxuuSncRsWax-3g">
+                        <li style="color: red;">YouTube</li></a>
                     </ul>
                 </div>
             </div>
@@ -126,21 +128,25 @@
         var LoginForm = document.getElementById("LoginForm");
         var RegForm = document.getElementById("RegForm");
         var Indicator = document.getElementById("Indicator");
+        var log = document.getElementById("log")
         function login(){
             RegForm.style.transform = "translateX(300px)";
             LoginForm.style.transform = "translateX(300px)";
             Indicator.style.transform = "translateX(0px)";
         }
-
-
-
         function register(){
             RegForm.style.transform = "translateX(0px)";
             LoginForm.style.transform = "translateX(0px)";
             Indicator.style.transform = "translateX(100px)";
         }
         
+        
 
+    </script>
+    <script>
+        function myFunction() {
+            alert("Sorry! App will come soon");
+        }
     </script>
     
 
